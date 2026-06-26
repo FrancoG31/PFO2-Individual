@@ -8,7 +8,9 @@
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Outfit:wght@400;600;700;800&display=swap"
+    rel="stylesheet">
   <!-- Font Awesome Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <!-- Styles -->
@@ -140,7 +142,8 @@
 
     /* Main Container Split Layout */
     .main-layout {
-      display: none; /* hidden by default */
+      display: none;
+      /* hidden by default */
       flex: 1;
       width: 100%;
       max-width: 1300px;
@@ -197,7 +200,8 @@
       border-left: 3px solid transparent;
     }
 
-    .sidebar-link:hover, .sidebar-link.active {
+    .sidebar-link:hover,
+    .sidebar-link.active {
       background-color: var(--color-celeste-light);
       color: var(--color-azul-oscuro);
       border-left-color: var(--color-celeste);
@@ -209,7 +213,8 @@
       display: flex;
       flex-direction: column;
       gap: 40px;
-      min-width: 0; /* Prevents overflow */
+      min-width: 0;
+      /* Prevents overflow */
     }
 
     /* Header styling */
@@ -402,7 +407,7 @@
 
     .color-swatch:hover {
       transform: translateY(-2px);
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     }
 
     .color-hex {
@@ -823,9 +828,17 @@
       font-size: 2rem;
     }
 
-    .file-html i { color: #E34F26; }
-    .file-css i { color: #1572B6; }
-    .file-js i { color: #F7DF1E; }
+    .file-html i {
+      color: #E34F26;
+    }
+
+    .file-css i {
+      color: #1572B6;
+    }
+
+    .file-js i {
+      color: #F7DF1E;
+    }
 
     .delivery-file-info {
       display: flex;
@@ -845,9 +858,11 @@
 
     /* Full-Screen Code Raw View */
     .raw-view-container {
-      display: block; /* visible by default */
+      display: block;
+      /* visible by default */
       width: 100%;
-      max-width: 1300px; /* matched layout width */
+      max-width: 1300px;
+      /* matched layout width */
       margin: 30px auto 60px;
       padding: 0 20px;
     }
@@ -881,9 +896,17 @@
       border-radius: 50%;
     }
 
-    .code-dot.red { background-color: #EF4444; }
-    .code-dot.yellow { background-color: #F59E0B; }
-    .code-dot.green { background-color: #10B981; }
+    .code-dot.red {
+      background-color: #EF4444;
+    }
+
+    .code-dot.yellow {
+      background-color: #F59E0B;
+    }
+
+    .code-dot.green {
+      background-color: #10B981;
+    }
 
     .code-title {
       font-size: 0.85rem;
@@ -914,13 +937,17 @@
     }
 
     .code-body {
-      padding: 40px; /* more spacious padding */
+      padding: 40px;
+      /* more spacious padding */
       margin: 0;
       font-family: 'Courier New', Courier, monospace;
-      font-size: 0.98rem; /* slightly larger font */
-      line-height: 1.65; /* more line spacing */
+      font-size: 0.98rem;
+      /* slightly larger font */
+      line-height: 1.65;
+      /* more line spacing */
       overflow-x: auto;
-      max-height: 850px; /* taller container */
+      max-height: 850px;
+      /* taller container */
       overflow-y: auto;
     }
 
@@ -985,7 +1012,8 @@
         border-bottom: 3px solid transparent;
       }
 
-      .sidebar-link.active, .sidebar-link:hover {
+      .sidebar-link.active,
+      .sidebar-link:hover {
         border-left-color: transparent;
         border-bottom-color: var(--color-celeste);
       }
@@ -1041,14 +1069,22 @@
     <aside class="sidebar">
       <h3 class="sidebar-title">Secciones</h3>
       <ul class="sidebar-menu">
-        <li><a href="#intro" class="sidebar-link active" data-sec="intro"><i class="fas fa-info-circle"></i> Rol e Intro</a></li>
-        <li><a href="#contexto" class="sidebar-link" data-sec="contexto"><i class="fas fa-globe-americas"></i> Contexto</a></li>
-        <li><a href="#layout" class="sidebar-link" data-sec="layout"><i class="fas fa-layer-group"></i> Diseño & Layout</a></li>
-        <li><a href="#estructura" class="sidebar-link" data-sec="estructura"><i class="fas fa-code"></i> Estructura HTML</a></li>
-        <li><a href="#recursos" class="sidebar-link" data-sec="recursos"><i class="fas fa-images"></i> Recursos Visuales</a></li>
-        <li><a href="#javascript" class="sidebar-link" data-sec="javascript"><i class="fab fa-js"></i> Funcionalidad JS</a></li>
-        <li><a href="#restricciones" class="sidebar-link" data-sec="restricciones"><i class="fas fa-exclamation-triangle"></i> Restricciones</a></li>
-        <li><a href="#entrega" class="sidebar-link" data-sec="entrega"><i class="fas fa-file-archive"></i> Formato de Entrega</a></li>
+        <li><a href="#intro" class="sidebar-link active" data-sec="intro"><i class="fas fa-info-circle"></i> Rol e
+            Intro</a></li>
+        <li><a href="#contexto" class="sidebar-link" data-sec="contexto"><i class="fas fa-globe-americas"></i>
+            Contexto</a></li>
+        <li><a href="#layout" class="sidebar-link" data-sec="layout"><i class="fas fa-layer-group"></i> Diseño &
+            Layout</a></li>
+        <li><a href="#estructura" class="sidebar-link" data-sec="estructura"><i class="fas fa-code"></i> Estructura
+            HTML</a></li>
+        <li><a href="#recursos" class="sidebar-link" data-sec="recursos"><i class="fas fa-images"></i> Recursos
+            Visuales</a></li>
+        <li><a href="#javascript" class="sidebar-link" data-sec="javascript"><i class="fab fa-js"></i> Funcionalidad
+            JS</a></li>
+        <li><a href="#restricciones" class="sidebar-link" data-sec="restricciones"><i
+              class="fas fa-exclamation-triangle"></i> Restricciones</a></li>
+        <li><a href="#entrega" class="sidebar-link" data-sec="entrega"><i class="fas fa-file-archive"></i> Formato de
+            Entrega</a></li>
       </ul>
     </aside>
 
@@ -1071,7 +1107,9 @@
           Rol: Desarrollador Frontend Senior especializado en E-commerce, Diseño Web Moderno y UX/UI.
         </div>
         <p style="color: var(--color-gris-texto);">
-          La tarea principal es escribir el código completo, limpio e inmediatamente funcional para una página web de venta de electrodomésticos con temática mundialista argentina, inspirada en la Selección Argentina, Lionel Messi y los colores celeste, blanco y dorado.
+          La tarea principal es escribir el código completo, limpio e inmediatamente funcional para una página web de
+          venta de electrodomésticos con temática mundialista argentina, inspirada en la Selección Argentina, Lionel
+          Messi y los colores celeste, blanco y dorado.
         </p>
       </section>
 
@@ -1101,18 +1139,23 @@
         </div>
 
         <div class="color-palette" style="margin-top: 20px;">
-          <span class="context-label" style="margin-bottom: 8px;">Paleta de Colores Predominantes (Hacer click para copiar)</span>
+          <span class="context-label" style="margin-bottom: 8px;">Paleta de Colores Predominantes (Hacer click para
+            copiar)</span>
           <div class="color-swatch-container">
-            <div class="color-swatch" style="background-color: #74ACDF;" onclick="copyToClipboard('#74ACDF', 'Color Celeste copiado')">
+            <div class="color-swatch" style="background-color: #74ACDF;"
+              onclick="copyToClipboard('#74ACDF', 'Color Celeste copiado')">
               <span class="color-hex">#74ACDF</span>
             </div>
-            <div class="color-swatch" style="background-color: #FFFFFF;" onclick="copyToClipboard('#FFFFFF', 'Color Blanco copiado')">
+            <div class="color-swatch" style="background-color: #FFFFFF;"
+              onclick="copyToClipboard('#FFFFFF', 'Color Blanco copiado')">
               <span class="color-hex">#FFFFFF</span>
             </div>
-            <div class="color-swatch" style="background-color: #D4AF37;" onclick="copyToClipboard('#D4AF37', 'Color Dorado copiado')">
+            <div class="color-swatch" style="background-color: #D4AF37;"
+              onclick="copyToClipboard('#D4AF37', 'Color Dorado copiado')">
               <span class="color-hex" style="color: #333;">#D4AF37</span>
             </div>
-            <div class="color-swatch" style="background-color: #0F2A4A;" onclick="copyToClipboard('#0F2A4A', 'Color Azul Oscuro copiado')">
+            <div class="color-swatch" style="background-color: #0F2A4A;"
+              onclick="copyToClipboard('#0F2A4A', 'Color Azul Oscuro copiado')">
               <span class="color-hex" style="background-color: rgba(255,255,255,0.2); color: #fff;">#0F2A4A</span>
             </div>
           </div>
@@ -1138,7 +1181,8 @@
           <!-- 2. Header -->
           <div class="layout-box header-main">
             <span style="font-weight: 800; color: var(--color-dorado);"><i class="fas fa-plug"></i> LOGO</span>
-            <span style="border: 1px solid var(--color-gris-borde); padding: 4px 16px; border-radius: 20px; font-size: 0.75rem; flex-grow: 0.5; text-align: left; color: var(--color-gris-texto);">
+            <span
+              style="border: 1px solid var(--color-gris-borde); padding: 4px 16px; border-radius: 20px; font-size: 0.75rem; flex-grow: 0.5; text-align: left; color: var(--color-gris-texto);">
               <i class="fas fa-search"></i> Buscá tu TV para ver a la Selección...
             </span>
             <div style="display: flex; gap: 12px; font-size: 0.8rem; color: var(--color-azul-oscuro);">
@@ -1149,7 +1193,8 @@
 
           <!-- 3. Categorías -->
           <div class="layout-box categories">
-            <div style="display: flex; justify-content: center; gap: 20px; color: var(--color-azul-oscuro); font-weight: 700;">
+            <div
+              style="display: flex; justify-content: center; gap: 20px; color: var(--color-azul-oscuro); font-weight: 700;">
               <span>Televisores</span>
               <span>Celulares</span>
               <span>Climatización</span>
@@ -1161,7 +1206,8 @@
           <!-- 4. Hero Section -->
           <div class="layout-box hero">
             <h3 style="font-family: var(--font-header); font-size: 1.4rem;">¡Equipate como un Campeón!</h3>
-            <p style="font-size: 0.75rem; color: var(--color-celeste-light); margin-top: 4px;">Fondo degradado azul a celeste con imagen de Messi integrada.</p>
+            <p style="font-size: 0.75rem; color: var(--color-celeste-light); margin-top: 4px;">Fondo degradado azul a
+              celeste con imagen de Messi integrada.</p>
             <div class="btn-cta">Comprar Ahora <i class="fas fa-arrow-right"></i></div>
           </div>
 
@@ -1171,28 +1217,32 @@
               <div class="img-placeholder"><i class="fas fa-tv"></i></div>
               <span style="font-weight: 700; color: var(--color-azul-oscuro);">Smart TV 55"</span>
               <span class="price">$1.299.999</span>
-              <p style="font-size: 0.7rem; color: var(--color-gris-texto); margin: 4px 0;">¡Tan potente como un remate al ángulo!</p>
+              <p style="font-size: 0.7rem; color: var(--color-gris-texto); margin: 4px 0;">¡Tan potente como un remate
+                al ángulo!</p>
               <div class="btn-buy">Comprar</div>
             </div>
             <div class="layout-product-card">
               <div class="img-placeholder"><i class="fas fa-mobile-alt"></i></div>
               <span style="font-weight: 700; color: var(--color-azul-oscuro);">Celular Lio-10</span>
               <span class="price">$799.999</span>
-              <p style="font-size: 0.7rem; color: var(--color-gris-texto); margin: 4px 0;">Conectividad digna del mejor del mundo.</p>
+              <p style="font-size: 0.7rem; color: var(--color-gris-texto); margin: 4px 0;">Conectividad digna del mejor
+                del mundo.</p>
               <div class="btn-buy">Comprar</div>
             </div>
             <div class="layout-product-card">
               <div class="img-placeholder"><i class="fas fa-snowflake"></i></div>
               <span style="font-weight: 700; color: var(--color-azul-oscuro);">Aire Split</span>
               <span class="price">$989.999</span>
-              <p style="font-size: 0.7rem; color: var(--color-gris-texto); margin: 4px 0;">Ideal para enfriar el pecho del rival.</p>
+              <p style="font-size: 0.7rem; color: var(--color-gris-texto); margin: 4px 0;">Ideal para enfriar el pecho
+                del rival.</p>
               <div class="btn-buy">Comprar</div>
             </div>
             <div class="layout-product-card">
               <div class="img-placeholder"><i class="fas fa-laptop"></i></div>
               <span style="font-weight: 700; color: var(--color-azul-oscuro);">Laptop Scaloni</span>
               <span class="price">$1.450.000</span>
-              <p style="font-size: 0.7rem; color: var(--color-gris-texto); margin: 4px 0;">Táctica pura para tus desarrollos.</p>
+              <p style="font-size: 0.7rem; color: var(--color-gris-texto); margin: 4px 0;">Táctica pura para tus
+                desarrollos.</p>
               <div class="btn-buy">Comprar</div>
             </div>
           </div>
@@ -1206,41 +1256,50 @@
           <h2 class="section-title">Estructura HTML Requerida</h2>
         </div>
         <p style="color: var(--color-gris-texto); margin-bottom: 20px;">
-          El sitio debe ser una sola página (Single Page) estructurada de forma semántica con las siguientes secciones en orden:
+          El sitio debe ser una sola página (Single Page) estructurada de forma semántica con las siguientes secciones
+          en orden:
         </p>
 
         <div class="timeline">
           <div class="timeline-item">
             <h4 class="timeline-title"><span>1</span> Cabecera (Header)</h4>
-            <div class="timeline-content">Diseño de barra superior, buscador optimizado con placeholder e iconos utilitarios.</div>
+            <div class="timeline-content">Diseño de barra superior, buscador optimizado con placeholder e iconos
+              utilitarios.</div>
           </div>
           <div class="timeline-item">
             <h4 class="timeline-title"><span>2</span> Hero Section</h4>
-            <div class="timeline-content">Banner promocional, slogan motivador, fondo con la foto local de Messi y botón CTA.</div>
+            <div class="timeline-content">Banner promocional, slogan motivador, fondo con la foto local de Messi y botón
+              CTA.</div>
           </div>
           <div class="timeline-item">
             <h4 class="timeline-title"><span>3</span> Sobre Nosotros (Historia)</h4>
-            <div class="timeline-content">Bloque con lema sobre el esfuerzo y la pasión mundialista, adornado con tres estrellas doradas.</div>
+            <div class="timeline-content">Bloque con lema sobre el esfuerzo y la pasión mundialista, adornado con tres
+              estrellas doradas.</div>
           </div>
           <div class="timeline-item">
             <h4 class="timeline-title"><span>4</span> Servicios y Beneficios</h4>
-            <div class="timeline-content">Iconos de facilidades como "Envío gratis a todo el país", "Garantía de Campeones" y "12 cuotas sin interés".</div>
+            <div class="timeline-content">Iconos de facilidades como "Envío gratis a todo el país", "Garantía de
+              Campeones" y "12 cuotas sin interés".</div>
           </div>
           <div class="timeline-item">
             <h4 class="timeline-title"><span>5</span> Catálogo de Electrodomésticos</h4>
-            <div class="timeline-content">Grid de 8 productos (Televisor, Celular, Heladera, Estufa, Aire Acondicionado, Air Fryer, Cocina y Computadora).</div>
+            <div class="timeline-content">Grid de 8 productos (Televisor, Celular, Heladera, Estufa, Aire Acondicionado,
+              Air Fryer, Cocina y Computadora).</div>
           </div>
           <div class="timeline-item">
             <h4 class="timeline-title"><span>6</span> Testimonios Futboleros</h4>
-            <div class="timeline-content">Reseñas de clientes que usen jerga e ingenio futbolero argentino de cancha.</div>
+            <div class="timeline-content">Reseñas de clientes que usen jerga e ingenio futbolero argentino de cancha.
+            </div>
           </div>
           <div class="timeline-item">
             <h4 class="timeline-title"><span>7</span> Formulario de Contacto</h4>
-            <div class="timeline-content">Campos de Nombre, Email, Teléfono y Mensaje con diseño moderno sin backend.</div>
+            <div class="timeline-content">Campos de Nombre, Email, Teléfono y Mensaje con diseño moderno sin backend.
+            </div>
           </div>
           <div class="timeline-item">
             <h4 class="timeline-title"><span>8</span> Pie de Página (Footer)</h4>
-            <div class="timeline-content">Derechos reservados, enlaces rápidos a navegación y redes sociales con iconos de utilidad.</div>
+            <div class="timeline-content">Derechos reservados, enlaces rápidos a navegación y redes sociales con iconos
+              de utilidad.</div>
           </div>
         </div>
       </section>
@@ -1252,7 +1311,8 @@
           <h2 class="section-title">Recursos Visuales Estables</h2>
         </div>
         <p style="color: var(--color-gris-texto);">
-          Las URLs oficiales que deben ser usadas para garantizar estabilidad y evitar enlaces rotos. Ninguna imagen contiene personas en su primer plano (excepto la imagen Hero):
+          Las URLs oficiales que deben ser usadas para garantizar estabilidad y evitar enlaces rotos. Ninguna imagen
+          contiene personas en su primer plano (excepto la imagen Hero):
         </p>
 
         <div class="resources-grid">
@@ -1381,7 +1441,9 @@
             <div class="js-feature-icon"><i class="fas fa-random"></i></div>
             <div class="js-feature-text">
               <h4>1. Generación de Descripciones Aleatorias</h4>
-              <p>Al cargar el sitio, cada tarjeta de electrodoméstico debe recibir una descripción cómica vinculada al mundial o la selección ("¡Tan potente como un remate de Messi al ángulo!", "Ideal para enfriar las bebidas antes del partido", etc.).</p>
+              <p>Al cargar el sitio, cada tarjeta de electrodoméstico debe recibir una descripción cómica vinculada al
+                mundial o la selección ("¡Tan potente como un remate de Messi al ángulo!", "Ideal para enfriar las
+                bebidas antes del partido", etc.).</p>
             </div>
           </div>
 
@@ -1389,7 +1451,9 @@
             <div class="js-feature-icon"><i class="fas fa-edit"></i></div>
             <div class="js-feature-text">
               <h4>2. Edición Dinámica de Descripciones</h4>
-              <p>Cada tarjeta debe poseer un botón "Editar Descripción" que reemplace el texto en caliente con un input/textarea o muestre un modal intuitivo. Al finalizar, debe poder Guardar o Cancelar actualizando los cambios en la tarjeta.</p>
+              <p>Cada tarjeta debe poseer un botón "Editar Descripción" que reemplace el texto en caliente con un
+                input/textarea o muestre un modal intuitivo. Al finalizar, debe poder Guardar o Cancelar actualizando
+                los cambios en la tarjeta.</p>
             </div>
           </div>
         </div>
@@ -1513,7 +1577,7 @@ El diseño debe seguir una estructura limpia, moderna y de alta conversión típ
 3. **Menú de Categorías**: Una barra horizontal inferior en el header con enlaces limpios para filtrar rápidamente (Televisores, Celulares, Climatización, Cocina, Computación).
 4. **Hero Section**: 
    - Un banner de gran impacto a ancho completo.
-   - Fondo con degradado elegante que va desde el azul oscuro hasta el celeste de la selección, con la imagen de Lionel Messi o la Selección Argentina integrada armoniosamente (no sobrepuesta toscamente).
+   - Fondo con degradado elegante que va desde el azul oscuro hasta el celeste de la selección, con la imagen de messiTV integrada armoniosamente (no sobrepuesta toscamente).
    - Textos alineados a la izquierda con tipografía sans-serif moderna, títulos grandes y un botón de acción (CTA) de color dorado brillante (#D4AF37) que cambie de tono al pasar el cursor (hover).
 5. **Grilla de Catálogo (Product Grid)**:
    - Una distribución responsiva de tarjetas de producto: 4 columnas en pantallas de escritorio, 2 en tablets y 1 en móviles.
@@ -1545,6 +1609,7 @@ El sitio debe constar de una sola página (Single Page) estructurada de forma se
 
 <recursos_visuales_estables>
 Usa estrictamente las imagenes de la carpeta img, cada una tiene un nombre que le corresponde al producto a vender (ej. \`televisor.avif\`, \`celular.avif\`, \`heladera.avif\`, \`estufa.avif\`, \`aire-acondicionado.avif\`, \`air-fryer.avif\`, \`cocina.avif\`, \`computadora.avif\`).
+Usa la imagen messiTV.png para usarla el Hero.
 </recursos_visuales_estables>
 
 <funcionalidad_javascript>
@@ -1599,7 +1664,7 @@ Asegúrate de que todo el código esté limpio, bien estructurado, libre de marc
     const toggleText = document.getElementById('toggleText');
     const designedView = document.getElementById('designedView');
     const rawView = document.getElementById('rawView');
-    
+
     let isRawView = true;
 
     btnToggleView.addEventListener('click', () => {
@@ -1621,7 +1686,7 @@ Asegúrate de que todo el código esté limpio, bien estructurado, libre de marc
     document.getElementById('btnCopyPrompt').addEventListener('click', () => {
       copyToClipboard(rawPromptMarkdown, '¡Prompt completo copiado!');
     });
-    
+
     document.getElementById('btnCopyCodeInner').addEventListener('click', () => {
       copyToClipboard(rawPromptMarkdown, '¡Prompt raw copiado!');
     });
@@ -1632,7 +1697,7 @@ Asegúrate de que todo el código esté limpio, bien estructurado, libre de marc
 
     window.addEventListener('scroll', () => {
       let current = '';
-      
+
       sections.forEach(section => {
         const sectionTop = section.offsetTop;
         const sectionHeight = section.clientHeight;
