@@ -15,7 +15,7 @@ La estructura del repositorio incluye una portada principal que sirve como nexo 
 
 ---
 
-## Deploy en Vercel
+## Linkazo
 
 👉 **[Ver Deploy en Vercel](https://pfo-2-individual.vercel.app/)** 
 
