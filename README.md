@@ -57,7 +57,7 @@ El diseño debe seguir una estructura limpia, moderna y de alta conversión típ
 3. **Menú de Categorías**: Una barra horizontal inferior en el header con enlaces limpios para filtrar rápidamente (Televisores, Celulares, Climatización, Cocina, Computación).
 4. **Hero Section**: 
    - Un banner de gran impacto a ancho completo.
-   - Fondo con degradado elegante que va desde el azul oscuro hasta el celeste de la selección, con la imagen de Lionel Messi o la Selección Argentina integrada armoniosamente (no sobrepuesta toscamente).
+   - Fondo con degradado elegante que va desde el azul oscuro hasta el celeste de la selección, con la imagen de messiTV integrada armoniosamente (no sobrepuesta toscamente).
    - Textos alineados a la izquierda con tipografía sans-serif moderna, títulos grandes y un botón de acción (CTA) de color dorado brillante (#D4AF37) que cambie de tono al pasar el cursor (hover).
 5. **Grilla de Catálogo (Product Grid)**:
    - Una distribución responsiva de tarjetas de producto: 4 columnas en pantallas de escritorio, 2 en tablets y 1 en móviles.
@@ -89,15 +89,12 @@ El sitio debe constar de una sola página (Single Page) estructurada de forma se
 
 <recursos_visuales_estables>
 Usa estrictamente las imagenes de la carpeta img, cada una tiene un nombre que le corresponde al producto a vender (ej. `televisor.avif`, `celular.avif`, `heladera.avif`, `estufa.avif`, `aire_acondicionado.avif`, `freidora_aire.avif`, `cocina.avif`, `computadora.avif`).
+Usa la imagen messiTV.png para usarla el Hero.
 </recursos_visuales_estables>
 
 <funcionalidad_javascript>
 Debes implementar con JavaScript vanilla las siguientes interacciones:
 1. **Generación de Descripciones Aleatorias**: Al cargar la página, cada electrodoméstico debe recibir una descripción aleatoria seleccionada de un array de frases predefinidas divertidas y relacionadas con la Scaloneta o el mundial (ej. "¡Tan potente como un remate de Messi al ángulo!", "Ideal para enfriar las bebidas antes del partido", "Rendimiento digno de un Campeón del Mundo").
-2. **Modificación de Descripciones**: 
-   - Cada tarjeta debe contar con un botón "Editar Descripción".
-   - Al hacer clic, debe permitir al usuario editar la descripción directamente en la tarjeta (por ejemplo, reemplazando el texto por un input/textarea en caliente) o abrir un modal sencillo donde pueda modificarla.
-   - Debe incluir un botón para "Guardar" o "Cancelar" la edición, actualizando el texto de la descripción en tiempo real en la tarjeta.
 </funcionalidad_javascript>
 
 <restricciones_tecnicas>
