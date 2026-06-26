@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="La Scaloneta del Hogar - Tienda de electrodomésticos n°1 de Argentina. ¡Equipate como un Campeón del Mundo! 12 cuotas sin interés y envío gratis a todo el país.">
+  <title>La Scaloneta del Hogar | Electrodomésticos de Campeones ⭐⭐⭐</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Outfit:wght@400;600;700;800&display=swap"
+    rel="stylesheet">
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <!-- 1. Barra de Anuncios Superior -->
+  <div class="announcement-bar">
+    <div class="announcement-content">
+      <span class="announcement-badge"><i class="fas fa-star"></i> CAMPEONES <i class="fas fa-star"></i></span>
+      <span>¡12 cuotas sin interés y envío gratis! ⭐⭐⭐</span>
+    </div>
+  </div>
+
+  <!-- 2. Cabecera Principal (Header) -->
+  <header class="main-header">
+    <div class="header-container">
+      <!-- Logo -->
+      <a href="#" class="logo-container" id="logoLink">
+        <div class="logo-icon">
+          <i class="fa-solid fa-plug-circle-bolt"></i>
+          <div class="stars-mini">⭐⭐⭐</div>
+        </div>
+        <div class="logo-text">
+          <span class="logo-brand">LA SCALONETA</span>
+          <span class="logo-sub">DEL HOGAR</span>
+        </div>
+      </a>
+
+      <!-- Buscador -->
+      <div class="search-container">
+        <form class="search-form" id="searchForm">
+          <input type="text" id="searchInput" placeholder="Buscá tu TV para ver a la Selección..."
+            aria-label="Buscar electrodomésticos">
+          <button type="submit" aria-label="Buscar">
+            <i class="fas fa-search"></i>
+          </button>
+        </form>
+      </div>
+
+      <!-- Iconos de Utilidad -->
+      <div class="utility-actions">
+        <button class="utility-btn" aria-label="Mi Cuenta">
+          <i class="fas fa-user-circle"></i>
+          <span>Mi Cuenta</span>
+        </button>
+        <button class="utility-btn cart-btn" id="cartBtn" aria-label="Mi Carrito">
+          <div class="cart-icon-wrapper">
+            <i class="fas fa-shopping-cart"></i>
+            <span class="cart-badge" id="cartBadge">0</span>
+          </div>
+          <span>Mi Carrito</span>
+        </button>
+        <button class="utility-btn" aria-label="Ayuda">
+          <i class="fas fa-question-circle"></i>
+          <span>Ayuda</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Menú de Categorías -->
+    <nav class="categories-nav">
+      <ul class="categories-list" id="categoriesList">
+        <li><button class="category-btn active" data-category="todos"><i class="fas fa-th-large"></i> Todos</button>
+        </li>
+        <li><button class="category-btn" data-category="televisores"><i class="fas fa-tv"></i> Televisores</button></li>
+        <li><button class="category-btn" data-category="celulares"><i class="fas fa-mobile-alt"></i> Celulares</button>
+        </li>
+        <li><button class="category-btn" data-category="climatizacion"><i class="fas fa-wind"></i>
+            Climatización</button></li>
+        <li><button class="category-btn" data-category="cocina"><i class="fas fa-blender"></i> Cocina</button></li>
+        <li><button class="category-btn" data-category="computacion"><i class="fas fa-laptop"></i> Computación</button>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- 3. Hero Section -->
+  <section class="hero-section">
+    <div class="hero-bg-overlay"></div>
+    <div class="hero-container">
+      <div class="hero-content">
+        <span class="hero-tag"><i class="fas fa-trophy"></i> OFERTAS MUNDIALISTAS</span>
+        <h1 class="hero-title">¡Equipate como un <span class="highlight">Campeón del Mundo</span>!</h1>
+        <p class="hero-subtitle">Viví la pasión argentina con la mejor tecnología para tu casa. Financiación de primera,
+          envío express y la garantía que te da la tercera estrella.</p>
+        <div class="hero-buttons">
+          <a href="#catalogo" class="btn btn-primary btn-gold" id="heroCTA">
+            Explorar Catálogo <i class="fas fa-chevron-down"></i>
+          </a>
+          <a href="#nosotros" class="btn btn-secondary">
+            Nuestra Historia <i class="fas fa-users"></i>
+          </a>
+        </div>
+      </div>
+      <div class="hero-image-wrapper">
+        <img src="messiTV.png" alt="Lionel Messi celebrando la Copa del Mundo con la Selección Argentina"
+          class="hero-img">
+        <div class="hero-img-overlay"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. Servicios / Características Principales (Beneficios) -->
+  <section class="benefits-section">
+    <div class="benefits-container">
+      <div class="benefit-card">
+        <div class="benefit-icon">
+          <i class="fas fa-truck-fast"></i>
+        </div>
+        <div class="benefit-info">
+          <h3>Envío Gratis Campeón</h3>
+          <p>A todo el país, sin vueltas. ¡Llega más rápido que una contra del Dibu!</p>
+        </div>
+      </div>
+      <div class="benefit-card">
+        <div class="benefit-icon">
+          <i class="fas fa-credit-card"></i>
+        </div>
+        <div class="benefit-info">
+          <h3>12 Cuotas Sin Interés</h3>
+          <p>Financiación exclusiva con tarjetas bancarias para jugar de local.</p>
+        </div>
+      </div>
+      <div class="benefit-card">
+        <div class="benefit-icon">
+          <i class="fas fa-shield-halved"></i>
+        </div>
+        <div class="benefit-info">
+          <h3>Garantía de Campeones</h3>
+          <p>Soporte oficial y cobertura de 3 estrellas en cada uno de tus productos.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. Descripción / Sobre Nosotros -->
+  <section class="about-section" id="nosotros">
+    <div class="about-container">
+      <div class="about-stars">
+        <i class="fas fa-star gold-star animate-pulse-star"></i>
+        <i class="fas fa-star gold-star animate-pulse-star delay-1"></i>
+        <i class="fas fa-star gold-star animate-pulse-star delay-2"></i>
+      </div>
+      <h2 class="section-title text-center">La Pasión que Nos Une</h2>
+      <p class="about-lead text-center">"La Scaloneta del Hogar" nació con el sueño de equipar a cada hogar de nuestra
+        patria con la misma garra, esfuerzo y excelencia que nuestra Selección demuestra en la cancha.</p>
+      <div class="about-grid">
+        <div class="about-text-block">
+          <h3>Esfuerzo y Trabajo en Equipo</h3>
+          <p>Creemos que para ser campeón del día a día, necesitás el equipamiento adecuado. Trabajamos codo a codo con
+            las mejores marcas nacionales e internacionales para traerte precios imbatibles y calidad garantizada.
+            Porque en este equipo, cada argentino es el jugador estrella.</p>
+        </div>
+        <div class="about-text-block">
+          <h3>Desde Ushuaia hasta La Quiaca</h3>
+          <p>Llegamos a cada rincón de la Argentina. Así como nos unimos para gritar cada gol de Messi, nos unimos para
+            llevarte lo último en tecnología directamente a tu puerta, con el orgullo de pertenecer a una tierra de
+            campeones.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. Catálogo de Electrodomésticos -->
+  <section class="catalog-section" id="catalogo">
+    <div class="container">
+      <div class="catalog-header">
+        <div class="catalog-title-wrapper">
+          <h2 class="section-title">El Equipo Ideal para tu Casa</h2>
+          <p class="section-subtitle">Seleccioná entre los mejores electrodomésticos con descuento mundialista.</p>
+        </div>
+        <div class="catalog-results-info">
+          Mostrando <span id="resultsCount">8</span> productos en <span id="currentCategoryText"
+            class="highlight-celeste">Todas las categorías</span>
+        </div>
+      </div>
+
+      <!-- Grid de Productos -->
+      <div class="products-grid" id="productsGrid">
+        <!-- Renderizado dinámico con JS -->
+      </div>
+
+      <!-- Mensaje de no resultados -->
+      <div class="no-results" id="noResults" style="display: none;">
+        <i class="fas fa-search-minus"></i>
+        <h3>¡Huuuy, pasó rozando el palo!</h3>
+        <p>No encontramos ningún producto que coincida con tu búsqueda. Intentá con otro término o seleccioná otra
+          categoría.</p>
+        <button class="btn btn-primary btn-gold" id="resetSearchBtn">Ver todos los productos</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. Testimonios / Reseñas de Clientes -->
+  <section class="testimonials-section">
+    <div class="container">
+      <h2 class="section-title text-center">La Voz de la Tribuna</h2>
+      <p class="section-subtitle text-center">Nuestros clientes ya están disfrutando de la tecnología de los campeones.
+      </p>
+
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <div class="testimonial-rating">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+              class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+          <p class="testimonial-text">"¡El Smart TV es una locura total! Vi el pase de Messi a Molina en la repetición
+            4K y me puse a llorar otra vez. Llegó volando a casa, ¡más rápido que el Dibu de contra!"</p>
+          <div class="testimonial-user">
+            <div class="user-avatar">M</div>
+            <div class="user-info">
+              <h4>Martín R.</h4>
+              <span>Quilmes, Buenos Aires</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-rating">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+              class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+          <p class="testimonial-text">"La heladera No Frost enfría una barbaridad. Ideal para tener las cervezas a punto
+            caramelo antes de que empiece el partido. La Scaloneta del Hogar no te deja a gamba."</p>
+          <div class="testimonial-user">
+            <div class="user-avatar">F</div>
+            <div class="user-info">
+              <h4>Florencia D.</h4>
+              <span>Rosario, Santa Fe</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-rating">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+              class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+          <p class="testimonial-text">"Compré la notebook para trabajar y vuela. Programo escuchando de fondo
+            'Muchachos' a todo volumen y se la banca espectacular. Una atención de diez puntos, súper recomendados."</p>
+          <div class="testimonial-user">
+            <div class="user-avatar">G</div>
+            <div class="user-info">
+              <h4>Gonzalo S.</h4>
+              <span>Ciudad de Córdoba</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8. Formulario de Contacto -->
+  <section class="contact-section" id="contacto">
+    <div class="contact-container">
+      <div class="contact-card">
+        <div class="contact-header-block">
+          <h2>Dejanos tu Mensaje en el Vestuario</h2>
+          <p>¿Tenés alguna consulta sobre envíos, garantías o financiación? Escribinos y nuestro equipo te responderá en
+            tiempo récord.</p>
+        </div>
+        <form class="contact-form" id="contactForm">
+          <div class="form-group">
+            <label for="contactName">Nombre Completo</label>
+            <input type="text" id="contactName" required placeholder="Ej: Lionel Messi">
+          </div>
+          <div class="form-group">
+            <label for="contactEmail">Correo Electrónico</label>
+            <input type="email" id="contactEmail" required placeholder="Ej: leo@seleccion.ar">
+          </div>
+          <div class="form-group">
+            <label for="contactPhone">Teléfono / Celular</label>
+            <input type="tel" id="contactPhone" required placeholder="Ej: 11 3333-3333">
+          </div>
+          <div class="form-group">
+            <label for="contactMessage">Tu Mensaje / Consulta</label>
+            <textarea id="contactMessage" rows="5" required
+              placeholder="¿En qué te podemos ayudar, campeón?"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block btn-gold">
+            Enviar Mensaje <i class="fas fa-paper-plane"></i>
+          </button>
+        </form>
+        <div class="contact-success-msg" id="contactSuccess" style="display: none;">
+          <div class="success-icon"><i class="fas fa-circle-check"></i></div>
+          <h3>¡Mensaje enviado con éxito, campeón!</h3>
+          <p>Tu consulta ya está en manos de nuestro cuerpo técnico. Te responderemos por mail o celular antes de lo que
+            te imaginás. ¡Gracias por confiar en nosotros!</p>
+          <button class="btn btn-secondary btn-sm" id="resetContactFormBtn">Enviar otro mensaje</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 9. Pie de Página (Footer) -->
+  <footer class="main-footer">
+    <div class="footer-container">
+      <!-- Columna Logo/Info -->
+      <div class="footer-col footer-about">
+        <div class="logo-container">
+          <div class="logo-icon">
+            <i class="fa-solid fa-plug-circle-bolt"></i>
+            <div class="stars-mini">⭐⭐⭐</div>
+          </div>
+          <div class="logo-text">
+            <span class="logo-brand">LA SCALONETA</span>
+            <span class="logo-sub">DEL HOGAR</span>
+          </div>
+        </div>
+        <p class="footer-desc">El distribuidor oficial de la felicidad del hogar argentino. Equipamos tu living, cocina
+          y oficina con pasión de campeones.</p>
+        <div class="stars-footer">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+      </div>
+
+      <!-- Columna Enlaces Rápidos -->
+      <div class="footer-col">
+        <h3>Enlaces Rápidos</h3>
+        <ul class="footer-links">
+          <li><a href="#catalogo"><i class="fas fa-chevron-right"></i> Catálogo</a></li>
+          <li><a href="#nosotros"><i class="fas fa-chevron-right"></i> Quiénes Somos</a></li>
+          <li><a href="#contacto"><i class="fas fa-chevron-right"></i> Contacto</a></li>
+          <li><a href="#"><i class="fas fa-chevron-right"></i> Preguntas Frecuentes</a></li>
+        </ul>
+      </div>
+
+      <!-- Columna Soporte / Legal -->
+      <div class="footer-col">
+        <h3>Soporte y Garantías</h3>
+        <ul class="footer-links">
+          <li><a href="#"><i class="fas fa-chevron-right"></i> Defensa del Consumidor</a></li>
+          <li><a href="#"><i class="fas fa-chevron-right"></i> Botón de Arrepentimiento</a></li>
+          <li><a href="#"><i class="fas fa-chevron-right"></i> Políticas de Envío</a></li>
+          <li><a href="#"><i class="fas fa-chevron-right"></i> Términos y Condiciones</a></li>
+        </ul>
+      </div>
+
+      <!-- Columna Redes y Medios de Pago -->
+      <div class="footer-col footer-social">
+        <h3>Alentanos en Redes</h3>
+        <div class="social-icons">
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        </div>
+        <div class="payments-methods">
+          <h4>Medios de Pago Soportados</h4>
+          <div class="payment-logos">
+            <i class="fab fa-cc-visa" title="Visa"></i>
+            <i class="fab fa-cc-mastercard" title="Mastercard"></i>
+            <i class="fab fa-cc-amex" title="American Express"></i>
+            <i class="fa-solid fa-money-bill-transfer" title="Transferencia Bancaria"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Copyright -->
+    <div class="footer-bottom">
+      <div class="footer-bottom-container">
+        <p>&copy; 2026 La Scaloneta del Hogar. Todos los derechos reservados. Hecho con pasión en Argentina. ⭐⭐⭐</p>
+        <p class="author-credits">Inspirado en la Selección de Lionel Messi - Distribuidor N°1 de electrodomésticos de
+          campeones.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal del Carrito (Simulación) -->
+  <div class="modal-overlay" id="cartModal">
+    <div class="cart-modal">
+      <div class="cart-modal-header">
+        <h3><i class="fas fa-shopping-cart"></i> Tu Carrito de Campeón</h3>
+        <button class="close-modal-btn" id="closeCartModal">&times;</button>
+      </div>
+      <div class="cart-modal-body">
+        <div class="empty-cart-state" id="emptyCartState">
+          <i class="fas fa-shopping-basket"></i>
+          <p>Tu carrito está vacío. ¡Corré a buscar las mejores ofertas!</p>
+          <button class="btn btn-primary btn-gold btn-sm" id="cartExploreBtn">Explorar Catálogo</button>
+        </div>
+        <div class="cart-items-container" id="cartItemsContainer" style="display: none;">
+          <!-- Items del carrito inyectados dinámicamente -->
+        </div>
+      </div>
+      <div class="cart-modal-footer" id="cartModalFooter" style="display: none;">
+        <div class="cart-total-row">
+          <span>Total:</span>
+          <span class="cart-total-price" id="cartTotalPrice">$0</span>
+        </div>
+        <div class="cart-modal-actions">
+          <button class="btn btn-secondary btn-sm" id="clearCartBtn">Vaciar Carrito</button>
+          <button class="btn btn-primary btn-gold" id="checkoutBtn">Finalizar Compra <i
+              class="fas fa-check-double"></i></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Script Principal -->
+  <script src="app.js"></script>
+</body>
+
+</html>

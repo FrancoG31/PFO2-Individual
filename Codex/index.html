@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="La Scaloneta del Hogar: electrodomesticos, tecnologia y cuotas en Argentina con espiritu campeon.">
+  <title>La Scaloneta del Hogar | Electrodomesticos Campeones</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="announcement">
+    <p>12 cuotas sin interes y envio gratis festejando las 3 estrellas! <span aria-hidden="true">***</span></p>
+  </div>
+
+  <header class="site-header">
+    <div class="header-main">
+      <a class="brand" href="#" aria-label="Inicio La Scaloneta del Hogar">
+        <span class="brand-mark" aria-hidden="true">
+          <i class="fa-solid fa-tv"></i>
+        </span>
+        <span class="brand-copy">
+          <strong>La Scaloneta</strong>
+          <small>del Hogar</small>
+        </span>
+      </a>
+
+      <form class="search" aria-label="Buscar productos">
+        <label class="sr-only" for="site-search">Buscar productos</label>
+        <input id="site-search" type="search" placeholder="Busca tu TV para ver a la Seleccion..." autocomplete="off">
+        <button type="submit" aria-label="Buscar">
+          <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+        </button>
+      </form>
+
+      <nav class="utility-nav" aria-label="Accesos rapidos">
+        <a href="#contacto" aria-label="Mi cuenta">
+          <i class="fa-regular fa-user" aria-hidden="true"></i>
+          <span>Mi Cuenta</span>
+        </a>
+        <a class="cart-link" href="#catalogo" aria-label="Carrito con 3 productos">
+          <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+          <span>Carrito</span>
+          <b>3</b>
+        </a>
+        <a href="#contacto" aria-label="Ayuda">
+          <i class="fa-regular fa-circle-question" aria-hidden="true"></i>
+          <span>Ayuda</span>
+        </a>
+      </nav>
+    </div>
+
+    <nav class="category-nav" aria-label="Categorias principales">
+      <a href="#catalogo">Televisores</a>
+      <a href="#catalogo">Celulares</a>
+      <a href="#catalogo">Climatizacion</a>
+      <a href="#catalogo">Cocina</a>
+      <a href="#catalogo">Computacion</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-content">
+        <p class="eyebrow">Promo Campeones del Mundo</p>
+        <h1 id="hero-title">Equipate como un Campeon del Mundo</h1>
+        <p>Televisores, tecnologia y electrodomesticos listos para vivir cada partido, cada asado y cada festejo en casa.</p>
+        <a class="cta" href="#catalogo">Ver ofertas campeonas</a>
+      </div>
+      <div class="hero-media" aria-hidden="true">
+        <img src="messiTV.png" alt="Messi TV">
+      </div>
+    </section>
+
+    <section class="about section" aria-labelledby="about-title">
+      <div class="section-heading">
+        <span class="stars" aria-hidden="true">***</span>
+        <h2 id="about-title">Pasión argentina, confort de primera</h2>
+      </div>
+      <p>En La Scaloneta del Hogar creemos que equipar tu casa tambien es un acto de equipo: elegir bien, cuidar el presupuesto y festejar cada mejora. Nacimos con espiritu de barrio, atencion cercana y ofertas pensadas para familias argentinas que quieren tecnologia confiable sin vueltas.</p>
+    </section>
+
+    <section class="services section" aria-labelledby="services-title">
+      <div class="section-heading">
+        <p class="eyebrow">Beneficios titulares</p>
+        <h2 id="services-title">Jugadas que simplifican tu compra</h2>
+      </div>
+      <div class="service-grid">
+        <article class="service-item">
+          <i class="fa-solid fa-truck-fast" aria-hidden="true"></i>
+          <h3>Envio gratis a todo el pais</h3>
+          <p>Recibi tus productos en casa con seguimiento y entregas coordinadas.</p>
+        </article>
+        <article class="service-item">
+          <i class="fa-solid fa-shield-halved" aria-hidden="true"></i>
+          <h3>Garantia de Campeones</h3>
+          <p>Soporte claro, garantia oficial y asistencia postventa cuando la necesites.</p>
+        </article>
+        <article class="service-item">
+          <i class="fa-solid fa-credit-card" aria-hidden="true"></i>
+          <h3>12 cuotas sin interes</h3>
+          <p>Financiacion simple para que tu casa juegue en primera sin desordenar el mes.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="catalog section" id="catalogo" aria-labelledby="catalog-title">
+      <div class="section-heading">
+        <p class="eyebrow">Catalogo titular</p>
+        <h2 id="catalog-title">Electrodomesticos para salir campeon</h2>
+      </div>
+
+      <div class="product-grid" id="product-grid" aria-live="polite"></div>
+    </section>
+
+    <section class="reviews section" aria-labelledby="reviews-title">
+      <div class="section-heading">
+        <p class="eyebrow">La hinchada opina</p>
+        <h2 id="reviews-title">Clientes que ya levantaron la copa</h2>
+      </div>
+      <div class="review-grid">
+        <article class="review-card">
+          <div class="review-stars" aria-label="5 estrellas">*****</div>
+          <p>"Una compra de diez, mas rapido que el Dibu atajando penales. La TV llego impecable."</p>
+          <strong>Martina G.</strong>
+        </article>
+        <article class="review-card">
+          <div class="review-stars" aria-label="5 estrellas">*****</div>
+          <p>"Me financiaron la heladera en cuotas y la atencion fue pura gambeta corta: facil y efectiva."</p>
+          <strong>Rodrigo P.</strong>
+        </article>
+        <article class="review-card">
+          <div class="review-stars" aria-label="5 estrellas">*****</div>
+          <p>"El aire quedo instalado antes del finde. Servicio serio, precio justo y final feliz."</p>
+          <strong>Lucia F.</strong>
+        </article>
+      </div>
+    </section>
+
+    <section class="contact section" id="contacto" aria-labelledby="contact-title">
+      <div class="contact-copy">
+        <p class="eyebrow">Contacto</p>
+        <h2 id="contact-title">Necesitas una asistencia?</h2>
+        <p>Dejanos tus datos y te ayudamos a elegir el producto ideal para tu casa, tu presupuesto y tu proximo festejo.</p>
+      </div>
+      <form class="contact-form">
+        <label>
+          Nombre
+          <input type="text" name="nombre" placeholder="Tu nombre" required>
+        </label>
+        <label>
+          Email
+          <input type="email" name="email" placeholder="tu@email.com" required>
+        </label>
+        <label>
+          Telefono
+          <input type="tel" name="telefono" placeholder="+54 9 11 1234 5678">
+        </label>
+        <label>
+          Mensaje
+          <textarea name="mensaje" rows="5" placeholder="Contanos que producto estas buscando"></textarea>
+        </label>
+        <button type="submit">Enviar consulta</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div>
+      <a class="brand footer-brand" href="#" aria-label="Inicio La Scaloneta del Hogar">
+        <span class="brand-mark" aria-hidden="true">
+          <i class="fa-solid fa-tv"></i>
+        </span>
+        <span class="brand-copy">
+          <strong>La Scaloneta</strong>
+          <small>del Hogar</small>
+        </span>
+      </a>
+      <p>Electrodomesticos, tecnologia y financiacion con espiritu argentino.</p>
+    </div>
+    <nav aria-label="Enlaces del pie">
+      <a href="#catalogo">Ofertas</a>
+      <a href="#contacto">Contacto</a>
+      <a href="#">Terminos</a>
+      <a href="#">Privacidad</a>
+    </nav>
+    <div class="socials" aria-label="Redes sociales">
+      <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+      <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a>
+      <a href="#" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i></a>
+    </div>
+    <p class="copyright">© 2026 La Scaloneta del Hogar. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Práctica Formativa Obligatoria 2 | Prompt Engineering en Agentes de IA</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Outfit:wght@400;600;700;800&display=swap"
+    rel="stylesheet">
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Styles -->
+  <style>
+    :root {
+      --color-celeste: #74ACDF;
+      --color-celeste-hover: #5A96CE;
+      --color-blanco: #FFFFFF;
+      --color-dorado: #D4AF37;
+      --color-azul-oscuro: #0F2A4A;
+      --color-azul-profundo: #0A192F;
+      --color-gris-fondo: #F8F9FA;
+      --color-gris-texto: #4A5568;
+      --color-gris-borde: #E2E8F0;
+
+      --font-primary: 'Montserrat', sans-serif;
+      --font-header: 'Outfit', sans-serif;
+
+      --border-radius-sm: 8px;
+      --border-radius-md: 16px;
+
+      --shadow-md: 0 10px 25px rgba(10, 25, 47, 0.05);
+      --shadow-hover: 0 20px 40px rgba(116, 172, 223, 0.2);
+      --transition-normal: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: var(--font-primary);
+      background-color: var(--color-gris-fondo);
+      color: var(--color-azul-profundo);
+      line-height: 1.6;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    /* Top Announcement Bar */
+    .announcement-bar {
+      background-color: var(--color-celeste);
+      color: var(--color-blanco);
+      width: 100%;
+      padding: 10px 0;
+      font-size: 0.9rem;
+      font-weight: 700;
+      text-align: center;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    }
+
+    .announcement-bar span {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .announcement-bar i {
+      color: var(--color-dorado);
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 40px 20px 60px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    /* Logo Icon above header similar to Antigravity */
+    .logo-badge {
+      display: inline-flex;
+      margin-bottom: 16px;
+    }
+
+    .logo-badge img {
+      height: 70px;
+      width: auto;
+      object-fit: contain;
+      transition: var(--transition-normal);
+    }
+
+    .logo-badge:hover img {
+      transform: scale(1.05);
+    }
+
+    h1 {
+      font-family: var(--font-header);
+      font-size: clamp(2rem, 5vw, 2.5rem);
+      font-weight: 800;
+      color: var(--color-azul-oscuro);
+      margin-bottom: 8px;
+      letter-spacing: -0.5px;
+    }
+
+    .subtitle {
+      font-size: clamp(0.95rem, 3vw, 1.15rem);
+      color: var(--color-gris-texto);
+      font-weight: 500;
+    }
+
+    /* Premium Metadata Card styles */
+    .metadata-card {
+      background: linear-gradient(135deg, var(--color-blanco) 0%, rgba(116, 172, 223, 0.04) 100%);
+      border-radius: var(--border-radius-md);
+      padding: 24px 32px;
+      margin-bottom: 40px;
+      box-shadow: 0 15px 35px rgba(15, 42, 74, 0.03), 0 5px 15px rgba(116, 172, 223, 0.05);
+      border: 1px solid var(--color-gris-borde);
+      position: relative;
+      overflow: hidden;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      transition: var(--transition-normal);
+    }
+
+    .metadata-card::before,
+    .metadata-card::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 5px;
+      background: linear-gradient(180deg, var(--color-celeste) 0%, var(--color-dorado) 100%);
+    }
+
+    .metadata-card::before {
+      left: 0;
+    }
+
+    .metadata-card::after {
+      right: 0;
+    }
+
+    .metadata-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 20px 40px rgba(116, 172, 223, 0.1), 0 5px 15px rgba(212, 175, 55, 0.06);
+      border-color: rgba(116, 172, 223, 0.3);
+    }
+
+    .metadata-item {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      justify-self: center;
+    }
+
+    .metadata-icon {
+      display: flex;
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.15rem;
+      flex-shrink: 0;
+      transition: var(--transition-normal);
+    }
+
+    .metadata-item:hover .metadata-icon {
+      transform: scale(1.1);
+    }
+
+    .icon-celeste {
+      background-color: rgba(116, 172, 223, 0.12);
+      color: var(--color-celeste);
+    }
+
+    .icon-gold {
+      background-color: rgba(212, 175, 55, 0.12);
+      color: #b89326;
+    }
+
+    .icon-navy {
+      background-color: rgba(15, 42, 74, 0.06);
+      color: var(--color-azul-oscuro);
+    }
+
+    .metadata-text {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .metadata-text .label {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      font-weight: 700;
+      letter-spacing: 0.8px;
+      color: var(--color-gris-texto);
+      margin-bottom: 2px;
+    }
+
+    .metadata-text .value {
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--color-azul-oscuro);
+    }
+
+    /* Grid layout */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      width: 100%;
+    }
+
+    /* Card styling */
+    .card {
+      background-color: var(--color-blanco);
+      border: 1px solid var(--color-gris-borde);
+      border-radius: var(--border-radius-md);
+      padding: 32px 24px;
+      display: flex;
+      flex-direction: column;
+      transition: var(--transition-normal);
+      box-shadow: var(--shadow-md);
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-hover);
+      border-color: var(--color-celeste);
+    }
+
+    .card h2 {
+      font-family: var(--font-header);
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: var(--color-azul-oscuro);
+      margin-bottom: 16px;
+      line-height: 1.2;
+    }
+
+    .card p {
+      color: var(--color-gris-texto);
+      font-size: 0.95rem;
+      line-height: 1.6;
+      margin-bottom: 32px;
+      flex-grow: 1;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      background-color: var(--color-celeste);
+      color: var(--color-blanco);
+      padding: 12px 24px;
+      font-weight: 700;
+      font-size: 0.95rem;
+      border-radius: var(--border-radius-sm);
+      text-decoration: none;
+      transition: var(--transition-normal);
+      box-shadow: 0 4px 12px rgba(116, 172, 223, 0.3);
+    }
+
+    .btn:hover {
+      background-color: var(--color-celeste-hover);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 18px rgba(116, 172, 223, 0.5);
+    }
+
+    .btn i {
+      font-size: 0.9rem;
+    }
+
+    /* Responsive */
+    @media (max-width: 850px) {
+      .grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+      }
+
+      .metadata-card {
+        padding: 20px 24px;
+        grid-template-columns: 1fr;
+      }
+
+      .metadata-item {
+        justify-self: start;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="announcement-bar">
+    <span>
+      <i class="fas fa-star"></i>¡Buenas!<i class="fas fa-star"></i>
+    </span>
+  </div>
+
+  <div class="container">
+    <header>
+      <div class="logo-badge">
+        <img src="Logo IFTS29.png" alt="Logo IFTS 29">
+      </div>
+      <h1>Práctica Formativa Obligatoria 2</h1>
+      <div class="subtitle">Prompt Engineering en Agentes de IA</div>
+    </header>
+
+    <div class="metadata-card">
+      <div class="metadata-item">
+        <div class="metadata-icon icon-celeste">
+          <i class="fa-solid fa-user-graduate"></i>
+        </div>
+        <div class="metadata-text">
+          <span class="label">Estudiante</span>
+          <span class="value">Franco Guarachi</span>
+        </div>
+      </div>
+      <div class="metadata-item">
+        <div class="metadata-icon icon-gold">
+          <i class="fa-solid fa-laptop-code"></i>
+        </div>
+        <div class="metadata-text">
+          <span class="label">Materia</span>
+          <span class="value">Desarrollo de Sistemas Web Frontend</span>
+        </div>
+      </div>
+      <div class="metadata-item">
+        <div class="metadata-icon icon-navy">
+          <i class="fa-solid fa-school"></i>
+        </div>
+        <div class="metadata-text">
+          <span class="label">Institución</span>
+          <span class="value">IFTS N° 29</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid">
+      <!-- Card 1 -->
+      <div class="card">
+        <h2>Prompt Utilizado</h2>
+        <p>Texto plano del prompt usado en ambos agentes.</p>
+        <a href="prompt.html" class="btn" target="_blank">
+          <i class="fas fa-file-alt"></i> Ver Prompt
+        </a>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="card">
+        <h2>Agente: Codex</h2>
+        <p>Landing Page generada por Codex, un agente de programación de OpenAI basado en GPT-5.</p>
+        <a href="Codex/index.html" class="btn">
+          <i class="fas fa-external-link-alt"></i> Abrir Landing
+        </a>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="card">
+        <h2>Agente: Antigravity</h2>
+        <p>Landing Page generada por Antigravity, un agente de desarrollo de Google basado en Gemini 3.5 Flash</p>
+        <a href="Antigravity/index.html" class="btn">
+          <i class="fas fa-external-link-alt"></i> Abrir Landing
+        </a>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
